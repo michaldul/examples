@@ -272,13 +272,13 @@ gke-base-demo: gke-base-validate
 ifeq ($(strip $(GKE_BASE_SKIP_CLIENT_CONSOLE)),)
 	@make --no-print-directory gke-base-deploy-client-console
 endif
-	@make --no-print-directory gke-base-deploy-schemaregistry
-	@make --no-print-directory gke-base-wait-for-schemaregistry
-	@make --no-print-directory gke-base-deploy-connect
-	@make --no-print-directory gke-base-wait-for-connect
-ifeq ($(strip $(GKE_BASE_SKIP_CLICKS)),)
-	@make --no-print-directory gke-base-deploy-clicks-connector
-endif
+#	@make --no-print-directory gke-base-deploy-schemaregistry
+#	@make --no-print-directory gke-base-wait-for-schemaregistry
+#	@make --no-print-directory gke-base-deploy-connect
+#	@make --no-print-directory gke-base-wait-for-connect
+#ifeq ($(strip $(GKE_BASE_SKIP_CLICKS)),)
+#	@make --no-print-directory gke-base-deploy-clicks-connector
+#endif
 	@make --no-print-directory gke-base-deploy-controlcenter
 	@make --no-print-directory gke-base-wait-for-controlcenter
 	@echo

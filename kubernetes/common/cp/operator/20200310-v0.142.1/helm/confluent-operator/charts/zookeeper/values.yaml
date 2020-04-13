@@ -19,8 +19,8 @@ resources:
   ## If not configured, kubernetes will set cpu/memory defaults.
   ## Reference: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   requests:
-    cpu: 500m
-    memory: 4Gi
+    cpu: 100m
+    memory: 800Mi
   limits: {}
 
 ## Volume size
@@ -31,7 +31,7 @@ volume:
 ## JVM configuration
 ##
 jvmConfig:
-  heapSize: 4G
+  heapSize: 800M
 ## Pod termination grace-period
 ##
 terminationGracePeriodSeconds: 180

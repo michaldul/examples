@@ -17,13 +17,13 @@ resources:
   ## If not configured, kubernetes will set cpu/memory defaults.
   ## Reference: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   requests:
-    cpu: 500m
-    memory: 4Gi
+    cpu: 50m
+    memory: 300Mi
   limits: {}
 ## JVM configuration  
 ##
 jvmConfig:
-  heapSize: 4G
+  heapSize: 300M
 ## Volume size
 ##
 volume:

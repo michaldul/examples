@@ -27,11 +27,11 @@ image:
 ##
 resources:
   limits:
-    cpu: 500m
-    memory: 512Mi
-  requests:
     cpu: 100m
     memory: 256Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
 ## Pod termination grace-period
 ##
 terminationGracePeriodSeconds: 30
